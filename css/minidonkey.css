@@ -1,0 +1,62 @@
+/*
+>>>>>>>>>>>>>>>>>>> Styles for mini-donkey, use this to customize varibles >>>>>>>>>>>>>>>
+*/
+/* Golbal
+===============*/
+* {
+  margin: 0; }
+
+body {
+  width: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "Helvetica", "Ariel";
+  margin-bottom: 2%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+a {
+  color: #363636;
+  text-decoration: none;
+  padding-left: 2em; }
+  a:hover {
+    color: #d5d5d5; }
+
+p {
+  line-height: 21px;
+  font-size: 1em; }
+
+.right {
+  float: right; }
+
+.center {
+  margin: 0 auto; }
+
+.email {
+  color: #5fbcac; }
+
+/* Header and Nav
+==================*/
+header {
+  background-color: #d5d5d5; }
+
+nav {
+  margin-bottom: 50px;
+  height: 33px;
+  padding-top: 10px; }
+  nav li {
+    display: inline-block;
+    color: black; }
+
+.nav-secondary li {
+  display: inline-block; }
+.nav-secondary li:first-child a {
+  padding-left: 0; }

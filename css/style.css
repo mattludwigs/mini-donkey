@@ -1,0 +1,57 @@
+/*
+>>>>>>>>>>>>>>>>>>> Main styles for css using mini-donkey >>>>>>>>>>>>>>>
+*/
+
+
+/* Global
+==================*/
+* {
+	margin: 0;
+}
+
+body {
+	width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+	font-family: 'Helvetica', "Ariel";
+	margin-bottom: 2%;
+}
+
+a {
+	color: #363636;
+	text-decoration: none;
+	padding-left: 2em;
+}
+
+a:hover {
+	color: #575757;
+}
+
+.right {
+	float:right;
+}
+ /* Header and Nav
+ ====================*/
+
+header {
+	background: #D5D5D5;
+}
+
+nav {
+	margin-bottom: 50px;
+	height: 33px;
+	padding-top: 10px;
+}
+
+li {
+	display: inline-block;
+	color: black;
+}

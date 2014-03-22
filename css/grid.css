@@ -1,0 +1,152 @@
+/* 
+>>>>>>>>>>>>>>>>> This is the css for the grid and media querys for mini-donkey >>>>>>>>>>>>>>>>
+*/
+
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87%;
+}
+
+
+
+/* Media Queries
+================================ */
+
+@media (min-width: 1px) and (max-width: 767px) {
+	.container > [class^="grid-"] {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	.hide-sm {
+		display:none;
+	}
+
+}
+
+@media (min-width: 768px) {
+
+	/* Columns
+	================================ */
+
+
+	.container > [class^="grid-"]  {
+		float: left;
+		min-height: 1px;
+		margin-left: 2%;
+	}
+
+	.container .first {
+		margin-left: 0;
+	}
+
+	/* Columns are 65px wide, with 20px gutters
+	=========================================== */
+
+	.grid-1 {
+		width: 6.5%;
+	}
+
+	.grid-2 {
+		width: 15%;
+	}
+	.grid-3 {
+		width: 23.5%;
+	}
+	.grid-4 {
+		width: 32%;
+	}
+	.grid-5 {
+		width: 40.5%;
+	}
+	.grid-6 {
+		width: 49%;
+	}
+	.grid-7 {
+		width: 57.5%;
+	}
+	.grid-8 {
+		width: 66%;
+	}
+	.grid-9 {
+		width: 74.5%;
+	}
+	.grid-10 {
+		width: 83%;
+	}
+	.grid-11 {
+		width: 91.5%;
+	}
+	.grid-12 {
+		width: 100%;
+	}
+
+	/* Offsets
+	===============*/
+
+	.container > .offset-1 {
+		margin-left: 6.5%
+	}
+
+	.container > .offset-2 {
+		margin-left: 15%
+	}
+
+	.container > .offset-3 {
+		margin-left: 23.5%
+	}
+
+	.container > .offset-4 {
+		margin-left: 32%
+	}
+
+	.container > .offset-5 {
+		margin-left: 40.5%
+	}
+
+	.container > .offset-6 {
+		margin-left: 49%
+	}
+
+	.container > .offset-7 {
+		margin-left: 57.5%
+	}
+
+	.container > .offset-8 {
+		margin-left: 66%;
+	}
+
+	.container > .offset-9 {
+		margin-left: 74.5%;
+	}
+
+	.container > .offset-10 {
+		margin-left: 83%;
+	}
+
+	.container > .offset-11 {
+		margin-left: 91.5%;
+	}
+
+	.container > .offset-12 {
+		margin-left: 100%;
+	}
+
+	/* Clearfix
+	================================ */
+
+	.group:after,
+	.container:after {
+	  content: " ";
+	  display: table;
+	  clear: both;
+	}
+}
+
+@media (min-width: 1100px) {
+	.container {
+		max-width: 1100px;
+	}
+}

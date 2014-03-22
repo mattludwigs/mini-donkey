@@ -1,0 +1,133 @@
+/*
+>>>>>>>>>>>>>>>>>>> Styles for mini-donkey, use this to customize varibles >>>>>>>>>>>>>>>
+*/
+
+// Variables
+//================
+
+// Set Font Sizes and Line Height
+$base-size: 1em;
+$base-line-height: 21px;
+
+// Set fonts 
+$font-primary: 'Helvetica';
+$font-secondary: 'Ariel';
+$font-last: 'Sans';
+$font-color: black;
+
+// Set Colors 
+$light-gray: #D5D5D5;
+$semi-black: #363636;
+$a-hover: #575757;
+$trans: transparent;
+
+// Define Colors for site
+$primary-color: #5FBCAC;
+$secondary-color: #EF7677;
+$dark-shade-primary: #3D9A8A;
+$dark-shade-secondary: #CF5455;
+
+// Set Margins 
+$center: 0 auto;
+$main-margin: 2%;
+
+// Mixins
+@mixin nav-style {
+	margin-bottom: 50px;
+	height: 33px;
+	padding-top: 10px;
+
+	li {
+		display: inline-block;
+		color: black;
+	}
+}
+
+@mixin second-nav {
+
+	li {
+		display: inline-block;
+	}
+
+	li {
+		&:first-child {
+			a {
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+
+/* Golbal
+===============*/
+
+* {
+	margin: 0;
+}
+
+body {
+	width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+	font-family: $font-primary, $font-secondary;
+	margin-bottom: $main-margin;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+}
+
+a {
+	color: $semi-black;
+	text-decoration: none;
+	padding-left: 2em;
+
+	&:hover{
+		color: $light-gray;
+	}
+}
+
+p {
+	line-height: $base-line-height;
+	font-size: $base-size;
+}
+
+.right {
+	float: right;
+}
+
+.center {
+	margin: $center;
+}
+
+.email {
+	color: $primary-color;
+}
+
+/* Header and Nav
+==================*/
+
+header {
+	background-color: $light-gray; 
+}
+
+nav {
+	@include nav-style;
+}
+
+.nav-secondary {
+	@include second-nav
+}
+
+
+
+
+
