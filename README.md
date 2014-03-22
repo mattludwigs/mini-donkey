@@ -13,9 +13,9 @@ While the documentation is being writen, please refer to the index.html file for
 ##Mini-Donkey Version History:
 
 #### v. 0.1.0 
-**released:** March 21, 2014
-**features:** navbar options and first steps for resposive grid
-**purpose:**  testing and building towards next release 
+* released: March 21, 2014
+* features: navbar options and first steps for resposive grid
+* purpose:  testing and building towards next release 
 
 ## License
 Mini-Donkey is released under the MIT License.
