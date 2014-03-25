@@ -17,7 +17,7 @@ While the documentation is being writen, please refer to the index.html file for
 * features: navbar options and first steps for resposive grid
 * purpose:  testing and building towards next release 
 
-### v. 0.2.0
+#### v. 0.2.0
 * relased: March 25, 2014
 * updates: Hero class to get a hero-like css effect, and a more flexable grid contianer. Now container takes 100% width on small screen sizes.
 * purpose: continues testing and building towards next release 
