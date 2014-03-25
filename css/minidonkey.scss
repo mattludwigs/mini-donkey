@@ -1,6 +1,4 @@
-/*
->>>>>>>>>>>>>>>>>>> Styles for mini-donkey, use this to customize varibles >>>>>>>>>>>>>>>
-*/
+// SASS for Mini-Donkey. Use this to costumize your donkey ride. Enjoy.
 
 // Variables
 //================
@@ -17,6 +15,7 @@ $font-color: black;
 
 // Set Colors 
 $light-gray: #D5D5D5;
+$med-gray: #A3A3A3;
 $semi-black: #363636;
 $a-hover: #575757;
 $trans: transparent;
@@ -110,6 +109,20 @@ p {
 
 .email {
 	color: $primary-color;
+}
+
+/* Hero
+===========*/
+
+.hero {
+	background-color: $light-gray;
+	width: 70%;
+	min-height: 250px;
+	margin: 0;
+	border: 2px solid $med-gray;
+	margin: $center;
+	text-align: center;
+	padding: 1%
 }
 
 /* Header and Nav

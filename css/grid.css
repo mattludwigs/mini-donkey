@@ -14,6 +14,7 @@
 /* Media Queries
 ================================ */
 
+
 @media (min-width: 1px) and (max-width: 767px) {
 	.container > [class^="grid-"] {
 		padding-top: 5px;
@@ -24,6 +25,13 @@
 		display:none;
 	}
 
+}
+
+@media (min-width: 285px) and (max-width: 450px){
+
+	.container {
+		width: 100%;
+	}
 }
 
 @media (min-width: 768px) {
