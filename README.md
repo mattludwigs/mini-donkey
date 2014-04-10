@@ -1,4 +1,4 @@
-# Mini-Donkey CSS v. 0.2.0
+# Mini-Donkey CSS v. 0.3.0
 
 Mini-Donkey CSS is a lightweight CSS framework. 
 
