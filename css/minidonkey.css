@@ -1,3 +1,6 @@
+.test {
+  background: #eee; }
+
 /* Golbal
 ===============*/
 * {
@@ -25,7 +28,7 @@ a {
   text-decoration: none;
   padding-left: 2em; }
   a:hover {
-    color: #d5d5d5; }
+    color: #8c8c8c; }
 
 p {
   line-height: 21px;
@@ -33,6 +36,17 @@ p {
 
 .right {
   float: right; }
+
+.left {
+  float: left; }
+
+@media (max-width: 650px) {
+  .sm-push {
+    float: left;
+    padding: 0; } }
+
+.clearfix {
+  clear: both; }
 
 .center {
   margin: 0 auto; }
@@ -44,13 +58,25 @@ p {
 ===========*/
 .hero {
   background-color: #d5d5d5;
-  width: 70%;
+  width: 100%;
   min-height: 250px;
   margin: 0;
   border: 2px solid #a3a3a3;
-  margin: 0 auto;
-  text-align: center;
+  margin: 0 auto 3%;
   padding: 1%; }
+  .hero h1,
+  .hero h2,
+  .hero h3,
+  .hero h4,
+  .hero h5,
+  .hero h6 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #363636; }
+  .hero p {
+    font-size: 1.45em;
+    font-weight: 100;
+    letter-spacing: 1px; }
 
 /* Header and Nav
 ==================*/
@@ -59,11 +85,14 @@ header {
 
 nav {
   margin-bottom: 50px;
-  height: 33px;
   padding-top: 10px; }
   nav li {
     display: inline-block;
-    color: black; }
+    color: black;
+    margin-bottom: 3%; }
+    @media (max-width: 650px) {
+      nav li {
+        display: block; } }
 
 .nav-secondary li {
   display: inline-block; }

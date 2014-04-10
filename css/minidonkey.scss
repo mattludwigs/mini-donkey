@@ -31,14 +31,37 @@ $center: 0 auto;
 $main-margin: 2%;
 
 // Mixins
+//===========
+
+// Mixin Media Querys
+
+@mixin change-donkey($point) {
+	
+	@if $point == full-ride {
+		@media (max-width: 1600px) {@content; }	
+	}
+	@else if $point == md-ride {
+		@media (max-width: 1250px) {@content; }
+	}
+	@else if $point == sm-ride {
+		@media (max-width: 650px) {@content; }
+	}
+	@else if $point == xsm-ride {
+		@media (max-width: 400px) {@content; }
+	}
+}
+
+// Mixin Styles
+
 @mixin nav-style {
 	margin-bottom: 50px;
-	height: 33px;
 	padding-top: 10px;
 
 	li {
 		display: inline-block;
 		color: black;
+		margin-bottom: 3%;
+		@include change-donkey(sm-ride) { display: block; };
 	}
 }
 
@@ -57,6 +80,9 @@ $main-margin: 2%;
 	}
 }
 
+.test {
+	background: #eee;
+}
 
 /* Golbal
 ===============*/
@@ -90,7 +116,7 @@ a {
 	padding-left: 2em;
 
 	&:hover{
-		color: $light-gray;
+		color: #8c8c8c;
 	}
 }
 
@@ -101,6 +127,18 @@ p {
 
 .right {
 	float: right;
+}
+
+.left {
+	float:left;
+}
+
+.sm-push {
+	@include change-donkey(sm-ride) {float:left; padding:0;}
+}
+
+.clearfix {
+	clear:both;
 }
 
 .center {
@@ -116,14 +154,31 @@ p {
 
 .hero {
 	background-color: $light-gray;
-	width: 70%;
+	width: 100%;
 	min-height: 250px;
 	margin: 0;
 	border: 2px solid $med-gray;
-	margin: $center;
-	text-align: center;
-	padding: 1%
+	margin: 0 auto 3%;
+	padding: 1%;
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-size: 3em;
+			font-weight:bold;
+			color: #363636;
+		}
+
+		p {
+			font-size: 1.45em;
+			font-weight: 100;
+			letter-spacing: 1px;
+		}
 }
+
 
 /* Header and Nav
 ==================*/

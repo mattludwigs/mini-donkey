@@ -18,9 +18,14 @@ While the documentation is being writen, please refer to the index.html file for
 * purpose:  testing and building towards next release 
 
 #### v. 0.2.0
-* relased: March 25, 2014
+* released: March 25, 2014
 * updates: Hero class to get a hero-like css effect, and a more flexable grid contianer. Now container takes 100% width on small screen sizes.
 * purpose: continue testing and building towards next release 
+
+#### v 0.3.0
+* released: April 10, 2014
+* updates: Hero class updated, added a push class to push elemets left on small screens,responsive navbar settings
+* purpose: continue testing and buiding towards more flexable grid
 
 ## License
 Mini-Donkey is released under the MIT License.
